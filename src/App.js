@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import InputBox from './components/InputBox'
+import InputBox from './components/InputBox';
+import InputArea from './components/InputArea';
 import ElementLabel from './components/ElementLabel';
 import Button from './components/Button';
 
@@ -16,6 +17,8 @@ function App() {
       <InputBox placeholder="Channel..."/>
       <ElementLabel text="Room"/>
       <InputBox placeholder="Room..."/>
+      <ElementLabel text="Payload"/>
+      <InputArea placeholder="Payload..."/>
       <Button text="Connect" onClick={connect}/>
     </>
   );
