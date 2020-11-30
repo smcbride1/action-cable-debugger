@@ -1,5 +1,5 @@
 export default function ElementLabel(props) {
     return(
-        <p className="element-label">{props.text}</p>
+        <p disabled={props.disabled} className={`element-label ${props.disabled ? "disabled" : ""}`}>{props.text}</p>
     )
 }

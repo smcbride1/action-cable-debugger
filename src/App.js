@@ -11,6 +11,9 @@ function App() {
   const connect = () => {
   }
 
+  const clearLog = () => {
+  }
+
   return (
     <>
       <div className="outer-container">
@@ -22,14 +25,15 @@ function App() {
             <InputBox className="fill-width-container" placeholder="Channel..."/>
             <ElementLabel text="Room"/>
             <InputBox className="fill-width-container" placeholder="Room..."/>
-            <ElementLabel text="Payload"/>
-            <InputArea className="fill-auto-container" placeholder="Payload..."/>
+            <ElementLabel disabled={!connected} text="Payload"/>
+            <InputArea disabled={!connected} className="fill-auto-container" placeholder="Payload..."/>
             <br></br>
             <Button text="Connect" className="fill-width-container" id="connect-button" onClick={connect}/>
           </div>
           <div id="response-info">
             <ElementLabel text="Log"/>
             <ConnectedIndicator connected={connected}/>
+            <Button text="CLEAR" className="small" onClick={clearLog}/>
             <InputArea className="fill-auto-container" placeholder="Logs will appear here"/>
           </div>
         </div>

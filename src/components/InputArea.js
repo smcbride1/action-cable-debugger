@@ -1,5 +1,5 @@
 export default function InputArea(props) {
     return(
-        <textarea className={props.className} placeholder={props.placeholder}></textarea>
+        <textarea disabled={props.disabled} className={`${props.className} ${props.disabled ? "disabled" : ""}`} placeholder={props.placeholder}></textarea>
     )
 }

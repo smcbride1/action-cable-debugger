@@ -1,6 +1,6 @@
 export default function ConnectedIndicator(props) {
     return(
-        <div className="connected-indicator">
+        <div id="connected-indicator" className={props.connected ? "connected" : "disconnected"}>
             {props.connected ? "CONNECTED" : "DISCONNECTED"}
         </div>
     )
