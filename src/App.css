@@ -82,7 +82,8 @@ button{
   border-radius: 6px;
   font-size: 11pt;
   background-color: #576DFF;
-  color: white
+  color: white;
+  cursor: pointer;
 }
 
 button:hover{
