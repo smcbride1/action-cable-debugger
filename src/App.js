@@ -34,7 +34,7 @@ function App() {
             <ElementLabel text="Log"/>
             <ConnectedIndicator connected={connected}/>
             <Button text="CLEAR" className="small" onClick={clearLog}/>
-            <InputArea className="fill-auto-container" placeholder="Logs will appear here"/>
+            <InputArea readonly="true" className="fill-auto-container" placeholder="Logs will appear here"/>
           </div>
         </div>
       </div>
