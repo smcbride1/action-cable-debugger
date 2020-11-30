@@ -37,4 +37,29 @@
 
 textarea{
   resize: none;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+input[type="text"]{
+  height: 30px;
+  font-size: 10pt;
+  border: 1px solid rgb(100, 100, 100);
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.element-label{
+  font-size: 12pt;
+  margin-bottom: 6px;
+}
+
+
+button{
+  height: 30px;
+  border: 1px solid rgb(100, 100, 100);
+  border-radius: 6px;
+  font-size: 11pt;
+  background-color: #576DFF;
+  color: white
 }
