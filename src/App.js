@@ -4,8 +4,10 @@ import InputBox from './components/InputBox';
 import InputArea from './components/InputArea';
 import ElementLabel from './components/ElementLabel';
 import Button from './components/Button';
+import ConnectedIndicator from './components/ConnectedIndicator';
 
 function App() {
+  let connected = false;
   const connect = () => {
   }
 
@@ -27,6 +29,7 @@ function App() {
           </div>
           <div id="response-info">
             <ElementLabel text="Log"/>
+            <ConnectedIndicator connected={connected}/>
             <InputArea className="fill-auto-container" placeholder="Logs will appear here"/>
           </div>
         </div>
