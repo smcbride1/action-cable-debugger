@@ -1,5 +1,5 @@
 export default function InputArea(props) {
     return(
-        <input type="area" placeholder={props.placeholder}></input>
+        <textarea className={props.className} placeholder={props.placeholder}></textarea>
     )
 }
