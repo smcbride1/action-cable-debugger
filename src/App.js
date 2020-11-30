@@ -1,45 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import InputBox from './components/InputBox';
-import InputArea from './components/InputArea';
-import ElementLabel from './components/ElementLabel';
-import Button from './components/Button';
-import ConnectedIndicator from './components/ConnectedIndicator';
+import Home from './components/Home';
 
 function App() {
-  let connected = false;
-  const connect = () => {
-  }
-
-  const clearLog = () => {
-  }
-
-  return (
-    <>
-      <div className="outer-container">
-        <div id="main-container">
-          <div id="request-info">
-            <ElementLabel text="Server Address"/>
-            <InputBox className="fill-width-container" placeholder="Server Address..."/>
-            <ElementLabel text="Channel"/>
-            <InputBox className="fill-width-container" placeholder="Channel..."/>
-            <ElementLabel text="Room"/>
-            <InputBox className="fill-width-container" placeholder="Room..."/>
-            <ElementLabel disabled={!connected} text="Payload"/>
-            <InputArea disabled={!connected} className="fill-auto-container" placeholder="Payload..."/>
-            <br></br>
-            <Button text="Connect" className="fill-width-container" id="connect-button" onClick={connect}/>
-          </div>
-          <div id="response-info">
-            <ElementLabel text="Log"/>
-            <ConnectedIndicator connected={connected}/>
-            <Button text="CLEAR" className="small" onClick={clearLog}/>
-            <InputArea readonly="true" className="fill-auto-container" placeholder="Logs will appear here"/>
-          </div>
-        </div>
-      </div>
-    </>
-  );
+  return(
+    <Home/>
+  )
 }
 
 export default App;
